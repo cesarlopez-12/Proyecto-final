@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section>
+            <p>Materia: Apricaciones web, Actividad: AW_ACTIVIDAD 13 PROYECTO FINAL. </p>
+        </section>
+
+        <!-- Navbar de bootstrap --> 
+        <section>
+            <nav class="navbar navbar-expand-lg bg-primary py-4 px-5" data-bs-theme="dark">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="index.html">Tienda de Ropa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="catalogo.html">Cátalogo</a>
+                    <a class="nav-link" href="iniciarSecion.html">Iniciar seción</a>
+                    <a class="nav-link" href="quienesSomos.html">Quiénes Somos</a>
+                </div>
+                </div>
+            </div>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <br>
+        <section>
+            <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="images/image.png" class="d-block w-100" alt="Ropa de invierno">
+                </div>
+                <div class="carousel-item">
+                <img src="images/image2.png" class="d-block w-100" alt="Ropa de invierno">
+                </div>
+                <div class="carousel-item">
+                <img src="images/image3.png" class="d-block w-100" alt="Ropa de invierno">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </section>
+
+       <!--Iconos sopórte-->
+       <section class="container">
+            <div class="icon-bar d-flex justify-content-center my-4">
+                <a href="#" class="mx-3 text-center"><i class="fas fa-shipping-fast fa-2x"></i><br> Envío Gratis</a>
+                <a href="#" class="mx-3 text-center"><i class="fas fa-undo fa-2x"></i><br> Devoluciones</a>
+                <a href="#" class="mx-3 text-center"><i class="fas fa-headset fa-2x"></i><br> Soporte 24/7</a>
+                <a href="#" class="mx-3 text-center"><i class="fas fa-lock fa-2x"></i><br> Pago Seguro</a>
+            </div>
+       </section>
+
+        <!--Descripción-->
+        <section class="container my-5 ">
+            <h1>Ropa y accesorios para mujer con hasta 20% de descuento</h1> <!-- Título -->
+            <p class="lead">Descubre las últimas tendencias en ropa y accesorios para mujer con descuentos 
+                exclusivos de hasta el 20%.!
+            </p> <!-- Párrafo descriptivo -->
+
+
+        </section>
+
+        <!-- Sección de productos -->
+        <section>
+            <div class="container my-5">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/image5.png" class="card-img-top" alt="Ropa de invierno para niños">
+                            <div class="card-body">
+                                <h5 class="card-title">Ropa para Niños</h5>
+                                <p class="card-text">Estilo y comodidad para los más pequeños. 
+                                    Prendas duraderas, divertidas y a la moda.
+                                </p>     
+                                <a href="#" class="btn btn-primary">Catálogo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/image6.png" class="card-img-top" alt="Ropa de invierno para mujeres">
+                            <div class="card-body">
+                                <h5 class="card-title">Ropa para Mujeres</h5>
+                                <p class="card-text">Abrígate con estilo. 
+                                    Encuentra chaquetas, abrigos y accesorios 
+                                    de última tendencia para el frío.
+                                </p>      
+                                <a href="#" class="btn btn-primary">Catálogo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/image7.png" class="card-img-top" alt="Ropa de invierno para hombres">
+                            <div class="card-body">
+                                <h5 class="card-title">Ropa para Hombres</h5>
+                                <p class="card-text">Máxima protección contra el frío 
+                                    sin sacrificar tu estilo urbano.
+                                </p>          
+                                <a href="#" class="btn btn-primary">Catálogo</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col">
+                        <div class="card h-100">
+                            <img src="images/image8.png" class="card-img-top" alt="Ropa de invierno para niñas">
+                            <div class="card-body">
+                                <h5 class="card-title">Ropa para Niñas</h5>
+                                <p class="card-text">Descubre moda llena de 
+                                    color y magia. Prendas cómodas y duraderas 
+                                    para sus aventuras diarias.
+                                </p>          
+                                <a href="#" class="btn btn-primary">Catálogo</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col">
+                        <div class="card h-100">
+                            <img src="images/image9.png" class="card-img-top" alt="Ropa de invierno para bebes">
+                            <div class="card-body">
+                                <h5 class="card-title">Ropa para Bebés</h5>
+                                <p class="card-text">Suavidad y calor garantizados. 
+                                    Descubre nuestra colección de básicos y conjuntos adorables.
+                                </p>          
+                                <a href="#" class="btn btn-primary">Catálogo</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col">
+                        <div class="card h-100">
+                            <img src="images/image10.png" class="card-img-top" alt="Ropa de invierno para adultos mayores">
+                            <div class="card-body">
+                                <h5 class="card-title">Ropa para Adultos mayores</h5>
+                                <p class="card-text">Priorizamos el bienestar y la funcionalidad. 
+                                    Prendas de fácil cuidado y gran confort para el día a día.
+                                </p>          
+                                <a href="#" class="btn btn-primary">Catálogo</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <section>
+            <p>&copy; 2024 Tienda de Ropa. Todos los derechos reservados.</p>
+            <ul class="list-inline">
+                <a href="#"><i class="fab fa-facebook fa-2x mx-2 text-white"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x mx-2 text-white"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x mx-2 text-white"></i></a>
+            </ul>
+        </section>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
