@@ -1,0 +1,72 @@
+body{
+    background-color: azure;
+    
+}
+
+header {
+    background-color: rgb(29, 9, 132);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+footer {
+    background-color: rgb(29, 9, 132);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 10px 0;
+}
+
+
+/* Estilos para el carrusel */
+.carousel-item img {
+    height: 500px;
+    object-fit: center;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-img-top {
+    height: 450px;
+    object-fit: cover;
+}
+
+/* Quienes somos */
+
+/* Quienes somos */
+
+.contenedor{
+    position: relative;
+    width: 100%;
+    height: 100vh; /* ocupa pantalla completa */
+    overflow: hidden;
+}
+
+.contenedor img{
+    width: 100%;
+    height: 100%;
+    /* ocupa todo el espacio del contenedor */
+    object-fit: cover;
+    filter: brightness(0.5); /* oscurecer */
+}
+
+.texto{
+    /* texto centrado en el contenedor */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* centrar horizontal y verticalmente */
+    transform: translate(-50%, -50%);
+    /*propiedades de estilo del texto */
+    color: white;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
