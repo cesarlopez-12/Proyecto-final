@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     background-color: azure;
     
@@ -70,3 +71,41 @@ h1 {
 }
 
 
+=======
+body{
+    background-color: azure;
+    
+}
+
+header {
+    background-color: rgb(29, 9, 132);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+footer {
+    background-color: rgb(29, 9, 132);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 10px 0;
+}
+
+
+/* Estilos para el carrusel */
+.carousel-item img {
+    height: 500px;
+    object-fit: center;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-img-top {
+    height: 450px;
+    object-fit: cover;
+}
+
+>>>>>>> 7a9d2373d05a782abebc12f16303045e4aea9ff6
