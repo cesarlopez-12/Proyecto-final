@@ -68,3 +68,27 @@ h1 {
 }
 
 
+/* Catalogos */
+.especialidades {
+    background-color: #E8F1FF; 
+    
+}
+
+.contacto {
+    background-color: #D6E8FF; 
+}
+
+.contacto {
+    background-color: #BFD7FF;
+}
+
+#imgCategoria {
+    display: block;      
+    margin: 0 auto;      
+    width: 250px;        
+    height: 250px;       
+    object-fit: cover;   
+    border-radius: 10px; 
+}
+
+

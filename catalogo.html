@@ -3,46 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Document</title>
+
+    <title>Tienda de Ropa</title>
 </head>
 <body>
-    <header>
-        <section>
-            <p>Materia: Apricaciones web, Actividad: AW_ACTIVIDAD 13 PROYECTO FINAL. </p>
-        </section>
 
-        <!-- Navbar de bootstrap --> 
-        <section>
-            <nav class="navbar navbar-expand-lg bg-primary py-4 px-5" data-bs-theme="dark">
-            <div class="container-fluid ">
+<header>
+    <body class="catalogo-page">
+
+
+    <!-- Navbar -->
+    <section>
+        <nav class="navbar navbar-expand-lg bg-primary py-4 px-5" data-bs-theme="dark">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Tienda de Ropa</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link" href="catalogo.html">Cátalogo</a>
-                    <a class="nav-link" href="iniciarSecion.html">Iniciar seción</a>
-                    <a class="nav-link" href="quienesSomos.html">Quiénes Somos</a>
-                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                        <a class="nav-link" href="iniciarSecion.html">Iniciar sesión</a>
+                        <a class="nav-link" href="quienesSomos.html">Quiénes Somos</a>
+                    </div>
                 </div>
             </div>
-            </nav>
-        </section>
-    </header>
+        </nav>
+    </section>
+</header>
 
-    <main>
-        <!--Contenido del catalogo-->
-    </main>
+<main>
+
+<section class="especialidades mb-5">
+    <div class="container">
+        <h2 class="text-center mt-5">Catalogo</h2>
+
+        <div class="row mt-4">
+
+            <div class="col-md-4">
+                <div class="text-center border rounded h-100 p-4">
+                    <h5>Ropa de bebé</h5>
+                    <p class="text-muted small">La mejor ropa de bebé de la ciudad</p>
+                    <img id="imgCategoria" src="images/image15.png" class="img-fluid rounded" alt="">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="text-center border rounded h-100 p-4">
+                    <h5>Adultos</h5>
+                    <p class="text-muted small">Cómoda y al mejor precio</p>
+                    <img id="imgCategoria" src="images/image14.png" class="img-fluid rounded" alt="">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="text-center border rounded h-100 p-4">
+                    <h5>Niños</h5>
+                    <p class="text-muted small">Material de la más alta calidad</p>
+                    <img id="imgCategoria" src="images/image16.png" class="img-fluid rounded" alt="">
+                </div>
+            </div>
+
+            <!--.container img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}-->
+        </div>
+    </div>
+</section>
+
+<!-- TENDENCIAS -->
+<section class="galeria bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Tendencias</h2>
+
+        <div id="carouselExampleIndicators" 
+             class="carousel slide" 
+             data-bs-ride="carousel" 
+             data-bs-interval="2000">
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" 
+                        class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- Imágenes -->
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="images/jovenes.jpg" class="d-block w-100" alt="">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/zapato.jpg" class="d-block w-100" alt="">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/sudadera.jpg" class="d-block w-100" alt="">
+                </div>
+
+            </div>
+
+            <!-- Controles izquierda/derecha -->
+            <button class="carousel-control-prev" type="button" 
+                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" 
+                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+
+        </div>
+    </div>
+</section>
+<!--OFERTAS-->
+<section class="ofertas py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">OFERTAS Y DESCUENTOS</h2>
+
+        <div class="row g-4">
+
+            <!-- oferta 1 -->
+            <div class="col-md-4">
+                <div class="p-3 border rounded shadow-sm bg-white h-100 text-center">
+                    <img src="images/unisex.jpg" class="img-fluid rounded mb-3" alt="">
+                    <h5 class="fw-bold">Sudaderas Unisex</h5>
+                    <p class="text-muted small">Antes: $650 MXN</p>
+                    <p class="text-danger fw-bold fs-5">Ahora: $399 MXN</p>
+                    <span class="badge bg-danger">-40% OFF</span>
+                </div>
+            </div>
+
+            <!-- oferta 2 -->
+            <div class="col-md-4">
+                <div class="p-3 border rounded shadow-sm bg-white h-100 text-center">
+                    <img src="images/basic.jpg" class="img-fluid rounded mb-3" alt="">
+                    <h5 class="fw-bold">Playeras Básicas</h5>
+                    <p class="text-muted small">Antes: $250 MXN</p>
+                    <p class="text-danger fw-bold fs-5">Ahora: $149 MXN</p>
+                    <span class="badge bg-danger">-45% OFF</span>
+                </div>
+            </div>
+
+            <!-- oferta 3 -->
+            <div class="col-md-4">
+                <div class="p-3 border rounded shadow-sm bg-white h-100 text-center">
+                    <img src="images/baby.jpg" class="img-fluid rounded mb-3" alt="">
+                    <h5 class="fw-bold">Ropa de Bebé</h5>
+                    <p class="text-muted small">Antes: $400 MXN</p>
+                    <p class="text-danger fw-bold fs-5">Ahora: $249 MXN</p>
+                    <span class="badge bg-danger">-35% OFF</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- SIGUENOS.. -->
+<section class="contacto py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4"> REDES SOCIALES</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+                <div class="text-center p-4 border rounded shadow-sm bg-white">
+
+                    <p>
+                        <i class="fa-brands fa-facebook fa-xl text-primary me-2"></i>
+                        <strong>Facebook:</strong> @TiendaRopaMX
+                    </p>
+
+                    <p>
+                        <i class="fa-brands fa-instagram fa-xl text-danger me-2"></i>
+                        <strong>Instagram:</strong> @ModaTrendyStore
+                    </p>
+
+                    <p>
+                        <i class="fa-brands fa-tiktok fa-xl text-dark me-2"></i>
+                        <strong>TikTok:</strong> @TiendaFashionOficial
+                    </p>
+
+                    <p>
+                        <i class="fa-brands fa-whatsapp fa-xl text-success me-2"></i>
+                        <strong>WhatsApp:</strong> 55-1234-5678
+                    </p>
+
+                    <hr>
+
+                    <p class="mb-1">
+                        <i class="fa-solid fa-envelope text-primary me-2"></i>
+                        contacto@tiendaropa.com
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-phone text-success me-2"></i>
+                        Tel: 55-9876-5432
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+</main>
+
+<!-- Bootstrap JS (importante para el carrusel) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
 
     <footer>
         <section>
             <p>&copy; 2024 Tienda de Ropa. Todos los derechos reservados.</p>
+            <ul class="list-inline">
+                <a href="#"><i class="fab fa-facebook fa-2x mx-2 text-white"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x mx-2 text-white"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x mx-2 text-white"></i></a>
+            </ul>
         </section>
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
